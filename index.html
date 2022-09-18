@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nail Art</title>
+    <style>
+      h1 {
+        color: rgb(126, 46, 139);
+        font-family: Trebuchet MS;
+        font-weight: 600;
+        margin: 10px;
+      }
+      h2 {
+        color: rgb(171, 126, 177);
+        font-family: Brush Script MT;
+        font-size: 27px;
+        font-weight: 400;
+        padding: 5px;
+        margin: auto;
+      }
+      img {
+        border-radius: 10px;
+      }
+      p {
+        font-family: Trebuchet MS;
+        line-height: 30px;
+        text-align: justify;
+      }
+      .wiki-link {
+        display: block;
+        font-family: Trebuchet MS;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      button {
+        background-color: rgb(126, 46, 139);
+        border: solid 1px rgb(126, 46, 139);
+        box-shadow: 5px 5px 10px rgba(81, 79, 81, 0.4);
+        color: white;
+        border-radius: 10px;
+        font-family: Trebuchet MS;
+        font-size: 18px;
+        padding: 13px 23px;
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        cursor: pointer;
+        opacity: 70%;
+      }
+      .container {
+        background: linear-gradient(
+          106.5deg,
+          rgba(255, 215, 185, 0.51) 23%,
+          rgba(223, 159, 247, 0.6) 93%
+        );
+        border-radius: 10px;
+        margin: -30px auto;
+        max-width: 700px;
+        padding: 20px;
+        text-align: center;
+        transform: scale(0.9);
+      }
+      .footer {
+        font-family: monospace;
+        margin: -10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love Nail Art!</h1>
+      <h2><em>the more glitter is the better </em></h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/042/296/original/4d00189d8ef30b7fca348a2b43ae9b38.jpg?1659298200"
+        width="300px"
+        alt="Nails"
+      />
+      <hr />
+      <p>
+        Nail art is a creative way to paint, decorate, enhance, and embellish
+        nails. It is a type of artwork that can be done on fingernails and
+        toenails, usually after manicures or pedicures. Manicures and pedicures
+        are beauty treatments that trim, shape, and polish the nails. Often,
+        these procedures remove the cuticles and soften the skin around the
+        nails. Types of manicures can vary from polish on natural nails to
+        dipping powder and acrylic nails.
+      </p>
+
+      <a
+        href="https://en.wikipedia.org/wiki/Nail_art"
+        class="wiki-link"
+        target="_blank"
+      >
+        <strong> Learn more here</strong>
+      </a>
+      <br />
+
+      <button>Apply for Nail Art Now</button>
+    </div>
+    <p class="footer">
+      <a href="https://github.com/plnvsln/Basic-weather-pj" target="_blank"
+        >Open-source code</a
+      >
+      by Chernii Polina
+    </p>
+    <script>
+      function applyForNails() {
+        let name = prompt("What is your name?");
+
+        if (name.length > 0) {
+          alert(
+            `Thanks, ${name}! We will be in touch. Meanwhile, think about your new nail design!`
+          );
+        } else {
+          alert(`Please enter your name`);
+        }
+      }
+
+      let applyButton = document.querySelector("button");
+      applyButton.addEventListener("click", applyForNails);
+    </script>
+  </body>
+</html>
